@@ -1,0 +1,27 @@
+{
+  "name": "rand",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "cd ui; python -m http.server; cd -",
+    "build": "npx rollup -c rollup.config.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@randlabs/myalgo-connect": "^1.1.0",
+    "algosdk": "^1.10.1",
+    "axios": "^0.21.1"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^20.0.0",
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.5",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "typescript": "^4.3.5"
+  }
+}
