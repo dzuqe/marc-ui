@@ -4,16 +4,18 @@ body {
   width: 100%;
   min-height: 100vh;
   overflow: hidden;
-  background-image: url(https://i.imgur.com/dpgnxWA.jpg);
+  background-image: url(https://i.pinimg.com/originals/d2/7c/cb/d27ccb552e120f485259bd5a9894ae3a.jpg);
   background-size: 100%;
 }
 
-.viewport {
+#viewport {
   width: 480px;
   background-color: black;
   color: white;
   margin: 100px auto 0 auto;
   position: relative;
+  text-align: center;
+  overflow: auto;
 }
 
 #buttons {
@@ -39,10 +41,11 @@ body {
 
 button {
   border: none;
-  padding: 5px 8px;
+  padding: 10px 25px;
   background-color: white;
   color: black;
   cursor: pointer;
+  margin: 20px;
 }
 
 #message {
@@ -53,19 +56,21 @@ button {
   font-style: italic;
 }
 
-.algo {
-  width: 24px;
-  height: 24px;
-  background-image: url(https://icodrops.com/wp-content/uploads/2018/03/Algorand-logo.jpg);
-  background-size: 24px;
+.box,
+.info {
+  background-color: black;
+  color: white;
 }
 
-.disclaimer {
-  width: 480px;
-  margin: 0 auto;
-  background-color: maroon;
-  color: #e2d6a6;
+#prices {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: blue;
+  color: white;
   font-weight: bold;
+  padding: 20px;
+  font-style: italic;
 }
 
 .disclaimer > a {
