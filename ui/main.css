@@ -12,31 +12,10 @@ body {
   width: 480px;
   background-color: black;
   color: white;
-  margin: 100px auto 0 auto;
+  margin: 0 auto 0 auto;
   position: relative;
   text-align: center;
   overflow: auto;
-}
-
-#buttons {
-  position: absolute;
-  left: 37%;
-  top: 20%;
-}
-
-#health, .health {
-  width: 480px;
-  background-color: black;
-  color: white;
-  margin: 0px auto;
-}
-
-.health > img {
-  width: 100%;
-}
-
-.health > .desc {
-  float: left;
 }
 
 button {
@@ -48,12 +27,14 @@ button {
   margin: 20px;
 }
 
-#message {
-  width: 100%;
+#wrapper {
+  width: 640px;
+  margin: 50px auto 0 auto;
   text-align: center;
-  background-color: black;
-  color: white;
-  font-style: italic;
+}
+
+#marc {
+  width: 480px;
 }
 
 .box,
@@ -71,10 +52,6 @@ button {
   font-weight: bold;
   padding: 20px;
   font-style: italic;
-}
-
-.disclaimer > a {
-  color: #10a1db;
 }
 
 .footer {

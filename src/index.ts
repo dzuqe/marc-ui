@@ -23,6 +23,7 @@ class App {
   prices: HTMLElement;
 
   constructor() {
+
     this.elem = document.createElement('div');
     this.btns = document.createElement('div');
 
@@ -52,7 +53,9 @@ class App {
     this.gamestate = null;
     this.elem.appendChild(this.btns);
     this.elem.appendChild(this.box);
+
     document.getElementById("root").appendChild(this.prices);
+
   }
 
   /**
@@ -205,7 +208,16 @@ class App {
    * Display the application
    */
   render() {
-    document.getElementById("root").appendChild(this.elem);
+    let wrapper = document.createElement('div');
+    wrapper.id = "wrapper";
+
+    let marc = document.createElement('img');
+    marc.id = "marc";
+    marc.src = "./assets/face1.png";
+
+    wrapper.appendChild(marc);
+    wrapper.appendChild(this.elem);
+    document.getElementById("root").appendChild(wrapper);
   }
 
   async optin() {
